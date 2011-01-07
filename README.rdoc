@@ -14,13 +14,13 @@ Add to your <tt>~/.riplrc</tt>
 
 == Configuration
 
-There is a <tt>Ripl.config[:rocket_mode]</tt> setting. If it is set to </tt>false</tt>, the rocket is not used.
+There is a <tt>Ripl.config[:rocket_mode]</tt> setting. If it is set to <tt>false</tt>, the rocket won't be used.
 
-The default option is <tt>:auto</tt>, which means the rocket will be used, if there is enough space on the last line and there has not been too much standard output.
+The default value for this setting is <tt>:auto</tt>, which means the rocket will be used, if there is enough space on the last line and there has not been too much standard output.
 
 Set it to any other true value and the plugin will always use the rocket.
 
-You can change the rocket prompt with <tt>Ripl.config[:rocket_prompt]</tt> and set a color with <tt>Ripl.config[:rocket_color]</tt>
+You can change the rocket prompt with <tt>Ripl.config[:rocket_prompt]</tt> and set a color with <tt>Ripl.config[:rocket_color]</tt>.
 
 == Bugs / TODO
 
