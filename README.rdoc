@@ -4,7 +4,7 @@ This {ripl}[http://github.com/cldwalker/ripl] plugin lets you output your result
 == Install
 Install the gem with:
 
-  gem install ripl-colorize_output
+  gem install ripl-rocket
 
 == Usage
 
