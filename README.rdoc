@@ -1,0 +1,35 @@
+== Description
+This {ripl}[http://github.com/cldwalker/ripl] plugin lets you output your result as a comment (using the #=> rocket).
+
+== Install
+Install the gem with:
+
+  gem install ripl-colorize_output
+
+== Usage
+
+Add to your <tt>~/.riplrc</tt>
+
+  require 'ripl/rocket'
+
+== Configuration
+
+There is a <tt>Ripl.config[:rocket_mode]</tt> setting. If it is set to </tt>false</tt>, the rocket is not used.
+
+The default option is <tt>:auto</tt>, which means the rocket will be used, if there is enough space on the last line and there has not been too much standard output.
+
+Set it to any other true value and the plugin will always use the rocket.
+
+You can change the rocket prompt with <tt>Ripl.config[:rocket_prompt]</tt> and set a color with <tt>Ripl.config[:rocket_color]</tt>
+
+== Bugs / TODO
+
+Input methods are currently not supported.
+
+== Copyright
+
+Thanks to genki for the original idea :).
+
+Copyright (c) 2011 Jan Lelis <http://rbjl.net> released under the MIT license.
+
+J-_-L
