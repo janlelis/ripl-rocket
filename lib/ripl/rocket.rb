@@ -3,7 +3,7 @@ require 'unicode/display_width'
 
 module Ripl
   module Rocket
-    VERSION = '0.1.0'
+    VERSION = '0.1.1'
 
     TPUT = {
       :sc   => `tput sc`,
@@ -75,8 +75,7 @@ module Ripl
           color_config = config[:rocket_color]
           color_code   = !color_config || color_config.to_s[/^[\d;]+$/] ?
             color_config : Ripl::Rocket::COLORS[color_config.to_sym]
-          colored_rocket = color_code ? "\e[#{ color_code }m#{ config[:rocket_prompt] }\e[0;0m"
-                                      : config[:rocket_prompt]
+          colored_rocket = color_code ? "\e[#{ color_code }m#{ config[:rocket_prompt] }\e[0;0m" : config[:rocket_prompt]
 
           # auto rocket mode:  only display rocket if line has enough space left
           line_too_long   = screen_length <= offset + rocket_length + output_length
